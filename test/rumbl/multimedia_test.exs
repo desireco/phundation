@@ -1,8 +1,8 @@
-defmodule Rumbl.MultimediaTest do
-  use Rumbl.DataCase, async: true
+defmodule Phoundation.MultimediaTest do
+  use Phoundation.DataCase, async: true
 
-  alias Rumbl.Multimedia
-  alias Rumbl.Multimedia.Category
+  alias Phoundation.Multimedia
+  alias Phoundation.Multimedia.Category
 
   describe "categories" do
     test "list_alphabetical_categories" do
@@ -20,7 +20,7 @@ defmodule Rumbl.MultimediaTest do
   end
 
   describe "videos" do
-    alias Rumbl.Multimedia.Video
+    alias Phoundation.Multimedia.Video
 
     @valid_attrs %{description: "desc", title: "title", url: "http://local"}
     @invalid_attrs %{description: nil, title: nil, url: nil}

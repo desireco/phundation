@@ -21,7 +21,7 @@ erl_crash.dump
 *.swp
 
 # Ignore package tarball (built via "mix hex.build").
-rumbl-*.tar
+Phoundation-*.tar
 
 # If NPM crashes, it generates a log, let's ignore it too.
 npm-debug.log

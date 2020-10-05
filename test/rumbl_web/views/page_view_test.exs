@@ -1,3 +1,3 @@
-defmodule RumblWeb.PageViewTest do
-  use RumblWeb.ConnCase, async: true
+defmodule PhoundationWeb.PageViewTest do
+  use PhoundationWeb.ConnCase, async: true
 end

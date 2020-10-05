@@ -1,4 +1,4 @@
-defmodule RumblWeb.ChannelCase do
+defmodule PhoundationWeb.ChannelCase do
   @moduledoc """
   This module defines the test case to be used by
   channel tests.
@@ -11,7 +11,7 @@ defmodule RumblWeb.ChannelCase do
   we enable the SQL sandbox, so changes done to the database
   are reverted at the end of every test. If you are using
   PostgreSQL, you can even run database tests asynchronously
-  by setting `use RumblWeb.ChannelCase, async: true`, although
+  by setting `use PhoundationWeb.ChannelCase, async: true`, although
   this option is not recommended for other databases.
   """
 
@@ -21,18 +21,18 @@ defmodule RumblWeb.ChannelCase do
     quote do
       # Import conveniences for testing with channels
       import Phoenix.ChannelTest
-      import RumblWeb.ChannelCase
+      import PhoundationWeb.ChannelCase
 
       # The default endpoint for testing
-      @endpoint RumblWeb.Endpoint
+      @endpoint PhoundationWeb.Endpoint
     end
   end
 
   setup tags do
-    :ok = Ecto.Adapters.SQL.Sandbox.checkout(Rumbl.Repo)
+    :ok = Ecto.Adapters.SQL.Sandbox.checkout(Phoundation.Repo)
 
     unless tags[:async] do
-      Ecto.Adapters.SQL.Sandbox.mode(Rumbl.Repo, {:shared, self()})
+      Ecto.Adapters.SQL.Sandbox.mode(Phoundation.Repo, {:shared, self()})
     end
 
     :ok

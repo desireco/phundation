@@ -1,9 +1,9 @@
-defmodule Rumbl.MixProject do
+defmodule Phoundation.MixProject do
   use Mix.Project
 
   def project do
     [
-      app: :rumbl,
+      app: :Phoundation,
       version: "0.1.0",
       elixir: "~> 1.7",
       elixirc_paths: elixirc_paths(Mix.env()),
@@ -19,7 +19,7 @@ defmodule Rumbl.MixProject do
   # Type `mix help compile.app` for more information.
   def application do
     [
-      mod: {Rumbl.Application, []},
+      mod: {Phoundation.Application, []},
       extra_applications: [:logger, :runtime_tools]
     ]
   end

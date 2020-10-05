@@ -1,5 +1,5 @@
-defmodule Rumbl.TestHelpers do
-  alias Rumbl.{
+defmodule Phoundation.TestHelpers do
+  alias Phoundation.{
     Accounts,
     Multimedia
   }

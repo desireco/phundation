@@ -1,4 +1,4 @@
-defmodule Rumbl.Repo.Migrations.CreateCategories do
+defmodule Phoundation.Repo.Migrations.CreateCategories do
   use Ecto.Migration
 
   def change do

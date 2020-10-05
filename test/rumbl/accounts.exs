@@ -1,8 +1,8 @@
-defmodule Rumbl.AccountsTest do
-  use Rumbl.DataCase, async: true
+defmodule Phoundation.AccountsTest do
+  use Phoundation.DataCase, async: true
 
-  alias Rumbl.Accounts
-  alias Rumbl.Accounts.User
+  alias Phoundation.Accounts
+  alias Phoundation.Accounts.User
 
   describe "register_user/1" do
     @valid_attrs %{

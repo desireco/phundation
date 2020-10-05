@@ -1,4 +1,4 @@
-defmodule Rumbl.Repo.Migrations.CreateVideos do
+defmodule Phoundation.Repo.Migrations.CreateVideos do
   use Ecto.Migration
 
   def change do

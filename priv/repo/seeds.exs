@@ -5,14 +5,14 @@
 # Inside the script, you can read and write to any of your
 # repositories directly:
 #
-#     Rumbl.Repo.insert!(%Rumbl.SomeSchema{})
+#     Phoundation.Repo.insert!(%Phoundation.SomeSchema{})
 #
 # We recommend using the bang functions (`insert!`, `update!`
 # and so on) as they will fail if something goes wrong.
 
-alias Rumbl.Repo
-alias Rumbl.Accounts.User
-alias Rumbl.Multimedia
+alias Phoundation.Repo
+alias Phoundation.Accounts.User
+alias Phoundation.Multimedia
 
 Repo.insert(%User{name: "Jose", username: "josevalim"})
 Repo.insert(%User{name: "Bruce", username: "redrapids"})

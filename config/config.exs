@@ -7,15 +7,15 @@
 # General application configuration
 use Mix.Config
 
-config :rumbl,
-  ecto_repos: [Rumbl.Repo]
+config :Phoundation,
+  ecto_repos: [Phoundation.Repo]
 
 # Configures the endpoint
-config :rumbl, RumblWeb.Endpoint,
+config :Phoundation, PhoundationWeb.Endpoint,
   url: [host: "localhost"],
   secret_key_base: "UUwzChPLwGsvGPq1qywtIatmCfWMbkDP5AxkXAOJkOgpIpTv96Md6TvpqPG1RS82",
-  render_errors: [view: RumblWeb.ErrorView, accepts: ~w(html json), layout: false],
-  pubsub_server: Rumbl.PubSub,
+  render_errors: [view: PhoundationWeb.ErrorView, accepts: ~w(html json), layout: false],
+  pubsub_server: Phoundation.PubSub,
   live_view: [signing_salt: "cIay+OVS"]
 
 # Configures Elixir's Logger
